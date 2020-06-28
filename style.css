@@ -1,0 +1,208 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Signika Negative', sans-serif;
+    color: pink;
+    outline: white;
+}
+
+#first-cover.cover{
+    background-image: url("images/wedding.jpg");
+    background-size: cover;
+    height: 50em;
+    width: auto;
+}
+
+.opener{
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#opener{
+    font-size: 5em;
+    font-weight: bold;
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+#logo{
+    font-size: 1.5em;
+}
+
+#description{
+    font-size: 2em;
+}
+
+nav{
+    background: white;
+    position: fixed;
+    width: 100%;
+    height: 4.8em;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.navbar-list{
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+    font-size: 1.4em;
+}
+
+#get-started{
+    height: 3em;
+}
+
+button{
+    font-family: 'Nothing You Could Do', cursive;
+    background: rgb(243, 185, 221);
+    color: white;
+    border-radius: 20px;
+    border-color: rgb(243, 185, 221);
+    cursor: pointer;
+}
+
+#main-button{
+    height: 2em;
+    width:15em;
+    font-size: 3.3em;
+}
+
+.how-title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 4em;
+    font-family: 'Nothing You Could Do', cursive;
+    height: 2.3em;
+}
+
+.step{
+    display: flex;
+    justify-content: space-around;
+    height: 30em;
+}
+
+#step-2{
+    flex-direction: row-reverse;
+}
+
+#step-3{
+    height: 25em;
+}
+
+.step-header{
+    font-size: 2em;
+}
+
+.step-header-extra:before{ /* taken from stack-overflow */
+    content: " ";
+    display: inline-block;
+}
+
+.step-header-extra{
+    font-size: 2.4em;
+    font-style: bold;
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+.highlights-title-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight-header-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.highlight-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    list-style-type: none;
+    background-color: rgb(245, 212, 232);
+    border-radius: 20px;
+    height: 20em;
+    margin: 0px;
+    padding: 0px;
+}
+
+.highlight-header{
+    font-size: 1.6em;
+    font-style: bold;
+    color:  black;
+    height: 7em;
+}
+
+.highlight-description{
+    font-size: 1.2em;
+    align-self: flex-end;
+    color: black;
+}
+
+.carosel-title-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carosel-main{
+    font-size: 1.7em;
+}
+
+.contact-title-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.social{
+    width: 9em;
+    height: 9em;
+    cursor: pointer;
+}
+
+.email-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(243, 185, 221);
+    border-radius: 8px;
+}
+.fheader{
+    font-size: 1.3em;
+    color: rgb(250, 242, 246)
+}
+ul{
+    list-style-type: none;
+}
+#logo-footer{
+    font-size: 1.9em;
+}
+
