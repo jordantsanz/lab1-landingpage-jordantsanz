@@ -4,26 +4,42 @@
         <title>lab1-landingpage-jordantsanz</title>
         <link rel="stylesheet" href="style.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Signika+Negative&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
             <nav class="navbar">
                 <ul class="navbar-list">
                     <li class="navbar-flex" id="logo">When's the Wedding?</li>
-                    <li class="navbar-flex">About us</li>
-                    <li class="navbar-flex">How it works</li>
-                    <li class="navbar-flex">Past weddings</li>
-                    <li class="navbar-flex">Pricing</li>
-                    <li class="navbar-flex">Contact us</li>
-                    <li class="navbar-flex">Login</li>
-                    <button class="navbar-flex" id="get-started">Plan my wedding</button>
+                    <li class="navbar-flex" id="r">About us</li>
+                    <li class="navbar-flex" id="r">How it works</li>
+                    <li class="navbar-flex" id="r">Past weddings</li>
+                    <li class="navbar-flex" id="r">Pricing</li>
+                    <li class="navbar-flex" id="r">Contact us</li>
+                    <li class="navbar-flex" id="r">Login</li>
+                    <button id="get-started">Plan my wedding</button>
                 </ul>
-            </nav>
+            </nav> 
         </header>
         <div class="cover" id="first-cover">
+            <!---Hamburger menu code adapted from css-tricks.com checkbox hack tutorial-->
+            <div class="dropdown">
+                <input type="checkbox" id="hamburger" />
+                <label for="hamburger">=</label>
+                <ul class="hamburger-list" id=hamlist>
+                    <li class="h-list-item"><a href="#" class="h-r" id="h-logo">When's the Wedding?</a></li>
+                    <li class="h-list-item"><a href="#" class="h-r">About</a></li>
+                    <li class="h-list-item"><a href="#" class="h-r">How it works</a></li>
+                    <li class="h-list-item"><a href="#" class="h-r">Past Weddings</a></li>
+                    <li class="h-list-item"><a href="#" class="h-r">Pricing</a></li>
+                    <li class="h-list-item"><a href="#" class="h-r">Contact us</a></li>
+                    <li class="h-list-item"><a href="#" class="h-r">Login</a></li>
+                    <li class="h-list-item"><button class="h-r-b" id="h-get-started">Plan my wedding</button></li>
+                </ul>
+            </div>
         <section class="opener">
             <h1 id="opener">Where love finds its date.</h1>
-                <div id="description">A wedding planning service that caters to your needs.</div>
+                <div id="description">Wedding planning: stress-free.</div>
                 <button id="main-button">Plan my wedding</button>
         </section>
         </div>
@@ -32,21 +48,27 @@
                 <h2 class="title" id="how-title">How it works:</h2>
             </div>
                 <div class="step" id="step-1">
-                    <h3 class="step-header">Step 1: <b class="step-header-extra"> Register </b></h3>
-                        <div class="step-description">
-                            Here are the steps to step 1.
+                    <h3 class="step-header" id="step-1-header">Step 1: <br> <b class="step-header-extra"> Register </b></h3>
+                        <div class="step-description" id="step-1-description">
+                            Tell us about yourself, <br>
+                             who you want invited, <br>
+                              and some other details. <br> <br>
+                              Simple yet comprehensive.
                         </div>
                 </div>
                 <div class="step" id="step-2">
-                    <h3 class="step-header">Step 2: <b class="step-header-extra"> Relax </b></h3>
-                        <div class="step-description">
-                            Here are the steps to step 2.
+                    <h3 class="step-header" id="step-2-header">Step 2: <br> <b class="step-header-extra"> Relax </b></h3>
+                        <div class="step-description" id="step-2-description">
+                            We do the hard-work <br>
+                            while you enjoy the <strong>excitement.</strong> <br> <br>
+                            You approve every little detail. <br>
                         </div>
                 </div>
                 <div class="step" id="step-3">
-                    <h3 class="step-header">Step 3: <b class="step-header-extra"> Be happy. </b></h3>
-                        <div class="step-description">
-                            Here are the steps to step 3.
+                    <h3 class="step-header" id="step-3-header">Step 3: <br> <b class="step-header-extra"> Be happy. </b></h3>
+                        <div class="step-description" id="step-3-description">
+                            We make sure everything is perfect. <br><br>
+                            You enjoy the best day of your life.
                         </div>
                 </div>
         </section>
@@ -57,38 +79,81 @@
             <ul class="highlight-list">
                 <li class="highlight-description-container" id=d1>
                     <h4 class="highlight-header" id="highlight-1">Easy to use</h4>
-                        <div class="highlight-description">
-                            Yeah, we're nifty.
+                        <div class="highlight-description" id="highlight-1">
+                            Tell us about <br>
+                             your perfect wedding. <br> 
+                             <br>
+                           <strong>We make it a reality.</strong> 
                         </div>
-                        <a href=#>
-                            See how
-                        </a>
                 </li>
                 <li class="highlight-description-container" id=d2></div>
                     <h4 class="highlight-header" id="highlight-2">Beautiful results</h4>
-                        <div class="highlight-description">Explanation</div>
-                        <a href=#>See how</a>
+                        <div class="highlight-description" id="highlight-2">
+                            Beautiful location. <br>
+                            Beautiful invitations. <br>
+                            <br>
+                            <strong>A day to remember.</strong>
+                        </div>
                 </li>
                 <li class="highlight-description-container" id=d3></div>
-                    <h4 class="highlight-header" id="highlight-3">Low price</h4>
-                        <div class="highlight-description">Explanation</div>
-                        <a href=#>See how</a>
+                    <h4 class="highlight-header" id="highlight-3-h">You choose</h4>
+                        <div class="highlight-description" id="highlight-3-d">
+                            Want us to plan everything? <br>
+                            Want us to just send invites? <br>
+                            <br>
+                            <strong>We're on it.</strong></div>
                 </li>
             </ul>
         </section>
-        <section class="carosel">
+        <section class="carosel-section">
             <div class="carosel-title-container">
-                <h2 class="title">Stunning weddings, just for you</h2>
-                <h3 class="carosel-main">Some of our past experiences:</h3>
+                <h2 class="title" id="carosel-title">Stunning weddings, <br>
+                     <span class="title-split" id="carosel-title-split">just for you</span></h2>
             </div>
-                <div id="carosel-container">
-                    <img/>
-                    <img/>
-                </div>
+            <div class="carosel-subtitle-container">
+                <h2 class="subtitle" id="carosel-subtitle">Our recent weddings: </h2>
+            </div>
+                <ul id="carosel-container">
+                    <li id="carosel-cell-1">
+                        <div class="carosel-box">
+                            <img class="img-box" src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+                        </div>
+                    </li>
+                    <li id="carosel-cell-2">
+                        <div class="carosel-box">
+                            <img class="img-box" src="https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+                        </div>
+                    </li>
+                    <li id="carosel-cell-3">
+                        <div class="carosel-box">
+                            <img class="img-box" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60">
+                        </div>
+                    </li>
+                    <li id="carosel-cell-4">
+                        <div class="carosel-box">
+                            <img class="img-box" src="https://images.pexels.com/photos/3342697/pexels-photo-3342697.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+                        </div>
+                    </li>
+                    <li id="carosel-cell-5">
+                        <div class="carosel-box">
+                            <img class="img-box" src="https://images.pexels.com/photos/3292697/pexels-photo-3292697.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+                        </div>
+                    </li>
+                    <li id="carosel-cell-6">
+                        <div class="carosel-box">
+                            <img class="img-box" src="https://images.pexels.com/photos/1371807/pexels-photo-1371807.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+                        </div>
+                    </li>
+                    <li id="carosel-cell-7">
+                        <div class="carosel-box">
+                            <img class="img-box" src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+                        </div>
+                    </li>
+                </ul>
         </section>
         <section class="contact">
             <div class="contact-title-container">
-                <h2 class="title" id="contact-title">Get in touch!</h2>
+                <h2 class="title" id="contact-title">Stay in touch!</h2>
             </div>
             <div class="contact-container">
                 <img class="social" src="images/instagram.png" href=#/>
@@ -96,9 +161,9 @@
                 <img class="social" src= "images/facebook.png" href=#/>
             </div>
             <div class="email-container">
-                <p>Enter email here:</p>
-                <input type="email">
-                <button>Send!</button>
+                <p class="email-p">Enter email here:</p>
+                <input type="search" placeholder="mywedding@gmail.com">
+                <button class="button" id="send">Send!</button>
             </div>
         </section>
         <footer>

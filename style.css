@@ -11,14 +11,19 @@ body{
 }
 
 #first-cover.cover{
-    background-image: url("images/wedding.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/wedding.jpg");
     background-size: cover;
     height: 50em;
     width: auto;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+    z-index: 1;
+    background-position-y: 250em;
 }
 
 .opener{
-    color: black;
+    color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -29,6 +34,8 @@ body{
     font-size: 5em;
     font-weight: bold;
     font-family: 'Nothing You Could Do', cursive;
+    margin: 0;
+    margin-top: 1.5em;
 }
 
 #logo{
@@ -37,15 +44,44 @@ body{
 
 #description{
     font-size: 2em;
+    margin-bottom: 1.5em;
 }
-
 nav{
-    background: white;
-    position: fixed;
+    background: transparent;
+    position: absolute;
     width: 100%;
     height: 4.8em;
     padding: 0px;
     margin: 0px;
+    z-index: 2;
+    transition: all 200ms;
+}
+
+.navbar:hover{
+    background: white;
+    position: fixed;
+}
+
+.navbar-flex{
+    color: white;
+    transition: all 300ms ease;
+    margin: 0px;
+    margin-top: 4px;
+}
+
+nav:hover .navbar-flex{
+    color: pink;
+    cursor: pointer;
+}
+
+.navbar-flex:hover{
+    color: rgb(243, 160, 174);
+    font-size: 1.5em;
+    
+}
+
+#logo:hover{
+    font-size: 1.7em;
 }
 
 ul.navbar-list{
@@ -54,19 +90,53 @@ ul.navbar-list{
     justify-content: space-around;
     display: flex;
     font-size: 1.4em;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    margin-top: .6em;
 }
 
 #get-started{
     height: 3em;
+    width: 9em;
+    margin: 0px;
+}
+
+nav:hover #get-started{
+    font-weight: bolder;
+}
+
+#get-started:hover{
+    font-size: .7em;
 }
 
 button{
     font-family: 'Nothing You Could Do', cursive;
     background: rgb(243, 185, 221);
     color: white;
-    border-radius: 20px;
+    border-radius: 30px;
     border-color: rgb(243, 185, 221);
     cursor: pointer;
+    transition: all 150ms linear;
+    margin: 0;
+    padding: 0; 
+    border-style: none;
+    font-weight: bold;
+    /* taken from cs52 website, hehe */
+    box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.16), 0px 3px 6px 1px rgba(0,0,0,0.23);
+}
+
+button:hover{
+    background: rgb(250, 209, 235);
+    border-color: rgb(250, 209, 235);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 8px 3px rgba(0,0,0,0.16), 0px 3px 6px 1px rgba(0,0,0,0.23);
+}
+button:active{
+    background: rgb(250, 209, 235);
+    border-color: rgb(250, 209, 235);
+    border-style: none;
+    box-shadow: 0px 4px 6px 3px rgba(0,0,0,0.16), 0px 3px 6px 1px rgba(0,0,0,0.23);
 }
 
 #main-button{
@@ -75,6 +145,10 @@ button{
     font-size: 3.3em;
 }
 
+#main-button:hover{
+    height: 2.2em;
+    width: 15.2em;
+}
 .how-title-container{
     display: flex;
     justify-content: center;
@@ -90,20 +164,91 @@ button{
 .step{
     display: flex;
     justify-content: space-around;
-    height: 30em;
+    align-items: center;
+    flex-direction: row;
+    height: 45em;
 }
 
+#step-1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/wedding2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+    z-index: 1;
+    background-position-y: top;
+}
+
+#step-1:hover #step-1-header{
+    font-size: 2.7em;
+    color: white;
+}
+
+#step-1:hover #step-1-description{
+    visibility: visible;
+    font-size: 1.7em;
+    color: white;
+    border-radius: 8px;
+}
+
+#step-2:hover #step-2-header{
+    font-size: 2.7em;
+    color: white;
+}
+
+#step-2:hover #step-2-description{
+    font-size: 1.7em;
+    color: white;
+    border-radius: 8px;
+}
+#step-3:hover #step-3-header{
+    font-size: 2.7em;
+    color: white;
+}
+
+#step-3:hover #step-3-description{
+    font-size: 1.7em;
+    color: white;
+    border-radius: 8px;
+
+}
+
+
 #step-2{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/wedding3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+    z-index: 1;
+    background-position-y: center;
     flex-direction: row-reverse;
 }
 
 #step-3{
-    height: 25em;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/wedding5.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+    z-index: 1;
+    background-position-y: top;
 }
 
 .step-header{
-    font-size: 2em;
+    font-size: 2.5em;
+    color: pink;
+    font-weight: bold;
+    transition: font-size 400ms, color 2s;
+
 }
+
+.step-description{
+    transition: color 2s, font-size 400ms;
+    text-align: center;
+    font-size: 1.5em;
+}
+
 
 .step-header-extra:before{ /* taken from stack-overflow */
     content: " ";
@@ -116,16 +261,25 @@ button{
     font-family: 'Nothing You Could Do', cursive;
 }
 
+
 .highlights-title-container{
     display:flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+}
+
+#highlights-title{
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
 }
 
 .highlight-header-container{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    text-align: center;
+    width: 100%;
 }
 
 .highlight-list{
@@ -133,36 +287,94 @@ button{
     justify-content: space-around;
     align-items: flex-start;
     list-style-type: none;
-    background-color: rgb(245, 212, 232);
+    text-align: center;
     border-radius: 20px;
+    width: auto;
     height: 20em;
     margin: 0px;
     padding: 0px;
+    margin-bottom: 40px;
 }
 
 .highlight-header{
-    font-size: 1.6em;
+    font-size: 2.1em;
     font-style: bold;
+    font-family: 'Nothing You Could Do', cursive;
     color:  black;
-    height: 7em;
+    transition: all 200ms;
+    margin-top: 14px;
 }
 
 .highlight-description{
-    font-size: 1.2em;
-    align-self: flex-end;
+    font-size: 1.5em;
     color: black;
+    transition: all 200ms;
 }
+
+.highlight-description-container{
+    background-color: pink;
+    border-radius: 20px;
+    height: 20em;
+    width: 20em;
+    box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.16), 0px 3px 6px 1px rgba(0,0,0,0.23);
+}
+
 
 .carosel-title-container{
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/wedding6.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-position: bottom;
+    z-index: 1;
+    background-position-y: top;
+    height: 35em;
+    text-align: center;
+}
+
+.carosel-title-container:hover #carosel-title{
+    font-size: 4.1em;
+    color: white;
+}
+
+.carosel-title-container:hover #carosel-title-split{
+    font-size: 2.6em;
+    color: white;
+}
+
+span.title-split{
+    font-size: 2.4em;
+    transition: font-size 800ms, color 1.5s;
+}
+
+#carosel-title.title{
+    transition: font-size 500ms, color 750ms;
 }
 
 .carosel-main{
     font-size: 1.7em;
 }
+
+/* received help from a TA on format of carosel container */
+#carosel-container{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-bottom: 35px;
+    padding: 0px;
+    background-color: pink;
+    align-items: center;
+}
+
+
 
 .contact-title-container{
     display: flex;
@@ -170,17 +382,52 @@ button{
     justify-content: center;
     flex-direction: row;
 }
+.carosel-box{
+    position: relative;
+    display: inline-block;
+}
+
+.img-box{
+    width: 35em;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all 200ms ease;
+}
+.carosel-subtitle-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subtitle{
+    font-size: 2.6em;
+}
+
+.img-box:hover{
+    width: 40em;
+}
 
 .contact-container{
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
+    margin-bottom: 40px;
 }
 .social{
     width: 9em;
     height: 9em;
     cursor: pointer;
+    transition: all 400ms;
+}
+
+.social:hover{
+    width: 10em;
+    height: 10em;
+}
+#contact-title{
+    margin: 0px;
+    padding: 0px;
 }
 
 .email-container{
@@ -188,6 +435,31 @@ button{
     align-items: center;
     justify-content: center;
 }
+
+input{ /* color scheme adapted from simpleanalytics.com*/
+    background-color: transparent;
+    color: pink;
+    border-radius: 4px;
+    border: transparent;
+    border-bottom: 2px solid pink;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 2em;
+}
+
+input::placeholder{
+    color: rgb(250, 225, 229);
+    font-size: 1.2em;
+}
+.email-p{
+    font-size: 2em;
+    font-style: bold;
+}
+#send{
+    width: 7em;
+    height: 3em;
+}
+
 .footer-container{
     display: flex;
     justify-content: space-around;
@@ -195,14 +467,144 @@ button{
     background-color: rgb(243, 185, 221);
     border-radius: 8px;
 }
+
 .fheader{
     font-size: 1.3em;
     color: rgb(250, 242, 246)
 }
+
 ul{
     list-style-type: none;
 }
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
 #logo-footer{
     font-size: 1.9em;
+}
+
+.dropdown{
+    display: none;
+}
+
+@media only screen and (max-width: 640px){
+    #opener{
+        text-align: center;
+    }
+
+    #main-button{
+        width: max-content;
+        transition: 200ms;
+    }
+    #step-2-header{
+        text-align: center;
+        width: 7em;
+    }
+    .step-header{
+        width: auto;
+        text-align: center;
+    }
+    .highlight-list{
+        align-items: center;
+        flex-direction: column;
+        height: max-content;
+    }
+    .highlight-description-container{
+        margin-bottom: 2em;
+    }
+    .step{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #step-2{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    #step-3-header{
+        font-size: 2em;
+        overflow-wrap: normal;
+    }
+    #step-3:hover #step3{
+        font-size: 2.2em;
+    }
+    .step-header-extra{
+        font-size: 1.8em;
+    }
+    span.title-split{
+        font-size: 1.6em;
+    }
+    .carosel-title-container:hover #carosel-title-split{
+        font-size: 1.8em;   
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar:hover{
+        background-color: none;
+        display: none;
+        background: none;
+    }
+    input[type="checkbox"]{
+        display: none;
+    }
+    input[type="checkbox"]:checked #first-cover.cover{
+        height: 60em;
+    }
+
+    .hamburger-list{
+        visibility: hidden;
+        height: 0px;
+        margin: 0px;
+        transition: all 500ms ease;
+    }
+
+    input[type=checkbox]:checked ~ #hamlist.hamburger-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px;
+        width: 100%;
+        margin: 0px;
+        height: 12em;
+        visibility: visible;
+        transition: all 3s ease;
+        
+    }
+    .h-list-item{
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        margin-top: 2px;
+        border-top: 2px solid pink;
+        border-bottom: 2px solid pink;
+    }
+    .h-r{
+        color: pink;
+        transition: 100ms;
+    }
+
+    label{
+        font-size: 6em;
+        color: white;
+    }
+    .dropdown{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: pink;
+        box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.16), 0px 3px 6px 1px rgba(0,0,0,0.23);
+    }
+    #main-button:hover{
+        width: max-content;
+        height: 2.3em;
+    }
+
+
 }
 
