@@ -4,20 +4,37 @@
         <title>lab1-landingpage-jordantsanz</title>
         <link rel="stylesheet" href="style.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Signika+Negative&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
             <nav class="navbar">
                 <ul class="navbar-list">
-                    <li class="navbar-flex" id="logo">When's the Wedding?</li>
-                    <li class="navbar-flex" id="r">About us</li>
-                    <li class="navbar-flex" id="r">How it works</li>
-                    <li class="navbar-flex" id="r">Past weddings</li>
-                    <li class="navbar-flex" id="r">Pricing</li>
-                    <li class="navbar-flex" id="r">Contact us</li>
-                    <li class="navbar-flex" id="r">Login</li>
-                    <button id="get-started">Plan my wedding</button>
+                    <div class="navbar-flex-holder">
+                        <li class="navbar-flex" id="logo">When's the Wedding?</li>
+                    </div>
+                    <div class="navbar-flex-holder">
+                        <li class="navbar-flex" id="r">About us</li>
+                    </div>
+                    <div class="navbar-flex-holder">
+                        <li class="navbar-flex" id="r">How it works</li>
+                    </div>
+                    <div class="navbar-flex-holder">
+                        <li class="navbar-flex" id="r">Past weddings</li>
+                    </div>
+                    <div class="navbar-flex-holder">
+                        <li class="navbar-flex" id="r">Pricing</li>
+                    </div>
+                    <div class="navbar-flex-holder">
+                        <li class="navbar-flex" id="r">Contact us</li>
+                    </div>
+                    <div class="navbar-flex-holder">
+                        <li class="navbar-flex" id="r">Login</li>
+                    </div>
+                    <div class="button-holder">
+                        <button id="get-started">Plan my wedding</button>
+                    </div>
                 </ul>
             </nav> 
         </header>
@@ -27,48 +44,65 @@
                 <input type="checkbox" id="hamburger" />
                 <label for="hamburger">=</label>
                 <ul class="hamburger-list" id=hamlist>
-                    <li class="h-list-item"><a href="#" class="h-r" id="h-logo">When's the Wedding?</a></li>
-                    <li class="h-list-item"><a href="#" class="h-r">About</a></li>
-                    <li class="h-list-item"><a href="#" class="h-r">How it works</a></li>
-                    <li class="h-list-item"><a href="#" class="h-r">Past Weddings</a></li>
-                    <li class="h-list-item"><a href="#" class="h-r">Pricing</a></li>
-                    <li class="h-list-item"><a href="#" class="h-r">Contact us</a></li>
-                    <li class="h-list-item"><a href="#" class="h-r">Login</a></li>
-                    <li class="h-list-item"><button class="h-r-b" id="h-get-started">Plan my wedding</button></li>
+                    <li class="h-list-item">
+                        <a href="#" class="h-r" id="h-logo">When's the Wedding?</a>
+                    </li>
+                    <li class="h-list-item">
+                        <a href="#" class="h-r">About</a>
+                    </li>
+                    <li class="h-list-item">
+                        <a href="#" class="h-r">How it works</a>
+                    </li>
+                    <li class="h-list-item">
+                        <a href="#" class="h-r">Past Weddings</a>
+                    </li>
+                    <li class="h-list-item">
+                        <a href="#" class="h-r">Pricing</a>
+                    </li>
+                    <li class="h-list-item">
+                        <a href="#" class="h-r">Contact us</a>
+                    </li>
+                    <li class="h-list-item">
+                        <a href="#" class="h-r">Login</a>
+                    </li>
                 </ul>
             </div>
-        <section class="opener">
-            <h1 id="opener">Where love finds its date.</h1>
-                <div id="description">Wedding planning: stress-free.</div>
-                <button id="main-button">Plan my wedding</button>
-        </section>
+            <section class="opener">
+                <h1 id="opener">Where <span class="love"> love </span> finds its date.</h1>
+                    <div id="opener-description">
+                        Wedding planning has never been easier.
+                    </div>
+                    <button id="main-button">
+                        Plan my wedding
+                    </button>
+            </section>
         </div>
         <section class="how">
             <div class="how-title-container">
                 <h2 class="title" id="how-title">How it works:</h2>
             </div>
                 <div class="step" id="step-1">
-                    <h3 class="step-header" id="step-1-header">Step 1: <br> <b class="step-header-extra"> Register </b></h3>
+                    <h3 class="step-header" id="step-1-header"><b class="step-header-extra"> Register </b></h3>
                         <div class="step-description" id="step-1-description">
                             Tell us about yourself, <br>
                              who you want invited, <br>
                               and some other details. <br> <br>
-                              Simple yet comprehensive.
+                              <span class="best-day">Simple yet comprehensive.</span>
                         </div>
                 </div>
                 <div class="step" id="step-2">
-                    <h3 class="step-header" id="step-2-header">Step 2: <br> <b class="step-header-extra"> Relax </b></h3>
+                    <h3 class="step-header" id="step-2-header"><b class="step-header-extra"> Relax </b></h3>
                         <div class="step-description" id="step-2-description">
                             We do the hard-work <br>
-                            while you enjoy the <strong>excitement.</strong> <br> <br>
-                            You approve every little detail. <br>
+                            while you enjoy the excitement. <br> <br>
+                            <span class="best-day">You approve every little detail.</span> <br>
                         </div>
                 </div>
                 <div class="step" id="step-3">
-                    <h3 class="step-header" id="step-3-header">Step 3: <br> <b class="step-header-extra"> Be happy. </b></h3>
+                    <h3 class="step-header" id="step-3-header"><b class="step-header-extra"> Be happy. </b></h3>
                         <div class="step-description" id="step-3-description">
                             We make sure everything is perfect. <br><br>
-                            You enjoy the best day of your life.
+                            <span class="best-day">You enjoy the best day of your life.</span>
                         </div>
                 </div>
         </section>
@@ -83,7 +117,8 @@
                             Tell us about <br>
                              your perfect wedding. <br> 
                              <br>
-                           <strong>We make it a reality.</strong> 
+                             <br>
+                           <strong>We make it real.</strong> 
                         </div>
                 </li>
                 <li class="highlight-description-container" id=d2></div>
@@ -91,6 +126,7 @@
                         <div class="highlight-description" id="highlight-2">
                             Beautiful location. <br>
                             Beautiful invitations. <br>
+                            <br>
                             <br>
                             <strong>A day to remember.</strong>
                         </div>
@@ -100,6 +136,7 @@
                         <div class="highlight-description" id="highlight-3-d">
                             Want us to plan everything? <br>
                             Want us to just send invites? <br>
+                            <br>
                             <br>
                             <strong>We're on it.</strong></div>
                 </li>
@@ -111,42 +148,65 @@
                      <span class="title-split" id="carosel-title-split">just for you</span></h2>
             </div>
             <div class="carosel-subtitle-container">
-                <h2 class="subtitle" id="carosel-subtitle">Our recent weddings: </h2>
+                <h2 class="subtitle" id="carosel-subtitle">Our recent weddings: </h2> <!--overlay idea from patagonia.com-->
             </div>
                 <ul id="carosel-container">
                     <li id="carosel-cell-1">
                         <div class="carosel-box">
                             <img class="img-box" src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+                            <div class="img-box-overlay">
+                                <div class="img-box-overlay-title">Jessie and James</div>
+                                <button class="see-more">See more</button>
+                            </div>
+                    
                         </div>
                     </li>
                     <li id="carosel-cell-2">
                         <div class="carosel-box">
                             <img class="img-box" src="https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+                            <div class="img-box-overlay">
+                                <div class="img-box-overlay-title">Wanda and Vicky</div>
+                                <button class="see-more">See more</button>
                         </div>
                     </li>
                     <li id="carosel-cell-3">
                         <div class="carosel-box">
                             <img class="img-box" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60">
+                            <div class="img-box-overlay">
+                                <div class="img-box-overlay-title">Mark and Anna</div>
+                                <button class="see-more">See more</button>
                         </div>
                     </li>
                     <li id="carosel-cell-4">
                         <div class="carosel-box">
                             <img class="img-box" src="https://images.pexels.com/photos/3342697/pexels-photo-3342697.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+                            <div class="img-box-overlay">
+                                <div class="img-box-overlay-title">Diane and Ben</div>
+                                <button class="see-more">See more</button>
                         </div>
                     </li>
                     <li id="carosel-cell-5">
                         <div class="carosel-box">
                             <img class="img-box" src="https://images.pexels.com/photos/3292697/pexels-photo-3292697.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+                            <div class="img-box-overlay">
+                                <div class="img-box-overlay-title">Jonah and Courtney</div>
+                                <button class="see-more">See more</button>
                         </div>
                     </li>
                     <li id="carosel-cell-6">
                         <div class="carosel-box">
                             <img class="img-box" src="https://images.pexels.com/photos/1371807/pexels-photo-1371807.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+                            <div class="img-box-overlay">
+                                <div class="img-box-overlay-title">Evan and Daniella</div>
+                                <button class="see-more">See more</button>
                         </div>
                     </li>
                     <li id="carosel-cell-7">
                         <div class="carosel-box">
                             <img class="img-box" src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+                            <div class="img-box-overlay">
+                                <div class="img-box-overlay-title">Stephen and Ariel</div>
+                                <button class="see-more">See more</button>
                         </div>
                     </li>
                 </ul>
@@ -156,9 +216,15 @@
                 <h2 class="title" id="contact-title">Stay in touch!</h2>
             </div>
             <div class="contact-container">
-                <img class="social" src="images/instagram.png" href=#/>
-                <img class="social" src= "images/twitter.png" href=#/>
-                <img class="social" src= "images/facebook.png" href=#/>
+                <div class="sm-container">
+                    <img class="social" src="images/instagram.png" href=#/>
+                </div>
+                <div class="sm-container">
+                    <img class="social" src= "images/twitter.png" href=#/>
+                </div>
+                <div class="sm-container">
+                    <img class="social" src= "images/facebook.png" href=#/>
+                </div>  
             </div>
             <div class="email-container">
                 <p class="email-p">Enter email here:</p>
@@ -169,8 +235,17 @@
         <footer>
             <div class="footer-container">
                 <h1 href=# class="fheader" id="logo-footer">When's the Wedding?</h1>
+                <div class="link-container">
+                    <ul class="link-list">
+                        <h2 class="fheader">About</h2>
+                        <li><a class=h-r id=f href=#>About us</a></li>
+                        <li><a class=h-r id=f href=#>Careers</a></li> 
+                        <li><a class=h-r id=f href=#>Contact us</a></li>
+                        <li><a class=h-r id=f href=#>Help</a></li>
+                    </ul>
+                </div>
                 <div class="link-container"> <!--- flexbox footer layout plan built on simpleanalytics.com layout ---->
-                    <ul>
+                    <ul class="link-list">
                         <h2 class="fheader">Resources</h2>
                         <li><a href=#>Past weddings</a></li>
                         <li><a href=#>How it works</a></li> 
@@ -179,16 +254,7 @@
                     </ul>
                 </div>
                 <div class="link-container">
-                    <ul>
-                        <h2 class="fheader">About us</h2>
-                        <li><a href=#>About us</a></li>
-                        <li><a href=#>Careers</a></li> 
-                        <li><a href=#>Contact us</a></li>
-                        <li><a href=#>Help</a></li>
-                    </ul>
-                </div>
-                <div class="link-container">
-                    <ul>
+                    <ul class="link-list">
                         <h2 class="fheader">Account</h2>
                         <li><a href=#>Login</a></li>
                         <li><a href=#>Account settings</a></li>
@@ -197,7 +263,7 @@
                     </ul>
                 </div>
                 <div class="link-container">
-                    <ul>
+                    <ul class="link-list">
                         <h2 class="fheader">Social Media</h2>
                         <li><a href=#>Instagram</a></li>
                         <li><a href=#>Twitter</a></li> 
@@ -206,6 +272,51 @@
                     </ul>
                 </div>
             </div>
+                <nav class="m-footer-nav">
+                    <div class="m-div-container">
+                        <h1 href=# class="h-r" id="m-header-logo">When's the wedding?</h1>
+                    </div>
+                    <div class="m-div-container" id="about-div">
+                        <input type="checkbox" id="about-checkbox" />
+                        <label for="about-checkbox" id="plus">About +</label>
+                        <ul class="m-footer-link-list" id="m-about-ll">
+                            <li><a class=h-r id=f href=#>About us</a></li>
+                            <li><a class=h-r id=f href=#>Careers</a></li> 
+                            <li><a class=h-r id=f href=#>Contact us</a></li>
+                            <li><a class=h-r id=f href=#>Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="m-div-container" id="resources-div">
+                        <input type="checkbox" id="resources-checkbox"/>
+                        <label for="resources-checkbox" id="plus">Resources +</label>
+                        <ul class="m-footer-link-list" id="m-resources-ll">
+                            <li><a class=h-r id=f href=#>Past weddings</a></li>
+                            <li><a class=h-r id=f href=#>How it works</a></li> 
+                            <li><a class=h-r id=f href=#>Pricing</a></li>
+                            <li><a class=h-r id=f href=#>Details</a></li>
+                        </ul>
+                    </div>
+                    <div class="m-div-container" id="account-div">
+                        <input type="checkbox" id="account-checkbox" />
+                        <label for="account-checkbox" id="plus">Account +</label>
+                        <ul class="m-footer-link-list" id="m-account-ll">
+                            <li><a class=h-r id=f href=#>Login</a></li>
+                            <li><a class=h-r id=f href=#>Account settings</a></li>
+                            <li><a class=h-r id=f href=#>Create new account</a></li> 
+                            <li><a class=h-r id=f href=#>Troubleshooting</a></li>
+                        </ul>
+                    </div>
+                    <div class="m-div-container" id="social-media-div">
+                        <input type="checkbox" id="social-media-checkbox" />
+                        <label for="social-media-checkbox" id="plus">Social Media +</label>
+                        <ul class="m-footer-link-list" id="m-social-media-ll">
+                            <li><a class=h-r id=f href=#>Instagram</a></li>
+                            <li><a class=h-r id=f href=#>Twitter</a></li> 
+                            <li><a class=h-r id=f href=#>Facebook</a></li>
+                            <li><a class=h-r id=f href=#>LinkedIn</a></li>
+                        </ul>
+                    </div>
+                 </nav>
         </footer>
     </body>
 </html>

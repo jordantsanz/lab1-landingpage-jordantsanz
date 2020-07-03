@@ -19,7 +19,6 @@ body{
     position: relative;
     background-position: center;
     z-index: 1;
-    background-position-y: 250em;
 }
 
 .opener{
@@ -40,11 +39,13 @@ body{
 
 #logo{
     font-size: 1.5em;
+    font-family: 'Dancing Script', cursive;
 }
 
-#description{
-    font-size: 2em;
+#opener-description{
+    font-size: 2.6em;
     margin-bottom: 1.5em;
+    text-align: center;
 }
 nav{
     background: transparent;
@@ -68,16 +69,20 @@ nav{
     margin: 0px;
     margin-top: 4px;
 }
+.love{
+    color: pink;
+    font-size: 1.5em;
+}
 
 nav:hover .navbar-flex{
     color: pink;
     cursor: pointer;
 }
 
-.navbar-flex:hover{
+nav:hover .navbar-flex:hover{
     color: rgb(243, 160, 174);
     font-size: 1.5em;
-    
+    font-weight: bolder;
 }
 
 #logo:hover{
@@ -107,11 +112,14 @@ nav:hover #get-started{
 }
 
 #get-started:hover{
-    font-size: .7em;
+    font-size: .6em;
+}
+.button-holder{
+    width: 7em;
 }
 
 button{
-    font-family: 'Nothing You Could Do', cursive;
+    font-family: 'Dancing Script', cursive;
     background: rgb(243, 185, 221);
     color: white;
     border-radius: 30px;
@@ -154,6 +162,9 @@ button:active{
     justify-content: center;
     align-items: center;
 }
+#how-title{
+    text-decoration: underline;
+}
 
 .title{
     font-size: 4em;
@@ -180,37 +191,46 @@ button:active{
 }
 
 #step-1:hover #step-1-header{
-    font-size: 2.7em;
+    font-size: 3.6em;
     color: white;
 }
 
 #step-1:hover #step-1-description{
-    visibility: visible;
-    font-size: 1.7em;
+    font-size: 2.1em;
     color: white;
-    border-radius: 8px;
 }
 
 #step-2:hover #step-2-header{
-    font-size: 2.7em;
+    font-size: 3.6em;
     color: white;
 }
 
 #step-2:hover #step-2-description{
-    font-size: 1.7em;
+    font-size: 2.1em;
     color: white;
-    border-radius: 8px;
 }
 #step-3:hover #step-3-header{
-    font-size: 2.7em;
+    font-size: 3.6em;
     color: white;
 }
 
 #step-3:hover #step-3-description{
-    font-size: 1.7em;
+    font-size: 2.4em;
     color: white;
-    border-radius: 8px;
+}
+#step-3:hover .best-day{
+    border-bottom: 3px white solid;
+}
+#step-2:hover .best-day{
+    border-bottom: 3px white solid;
+}
+#step-1:hover .best-day{
+    border-bottom: 3px white solid;
+}
 
+.best-day{
+    transition: 200ms border-bottom ease;
+    transition-delay: 900ms;
 }
 
 
@@ -230,13 +250,15 @@ button:active{
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-position: top;
     z-index: 1;
-    background-position-y: top;
 }
 
 .step-header{
-    font-size: 2.5em;
+    font-size: 3.5em;
     color: pink;
     font-weight: bold;
     transition: font-size 400ms, color 2s;
@@ -246,8 +268,9 @@ button:active{
 .step-description{
     transition: color 2s, font-size 400ms;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
 }
+
 
 
 .step-header-extra:before{ /* taken from stack-overflow */
@@ -256,7 +279,7 @@ button:active{
 }
 
 .step-header-extra{
-    font-size: 2.4em;
+    font-size: 2.6em;
     font-style: bold;
     font-family: 'Nothing You Could Do', cursive;
 }
@@ -272,6 +295,10 @@ button:active{
     padding: 0;
     margin: 0;
     margin-top: 30px;
+}
+strong{
+    font-size: 1.3em;
+    font-family: 'Nothing You Could Do', cursive;
 }
 
 .highlight-header-container{
@@ -297,17 +324,17 @@ button:active{
 }
 
 .highlight-header{
-    font-size: 2.1em;
-    font-style: bold;
+    font-size: 2.5em;
     font-family: 'Nothing You Could Do', cursive;
-    color:  black;
+    color:  white;
+    border-bottom: 5px dotted lemonchiffon;
     transition: all 200ms;
     margin-top: 14px;
 }
 
 .highlight-description{
     font-size: 1.5em;
-    color: black;
+    color: white;
     transition: all 200ms;
 }
 
@@ -344,11 +371,13 @@ button:active{
 .carosel-title-container:hover #carosel-title-split{
     font-size: 2.6em;
     color: white;
+    border-bottom: 7px white solid;
 }
 
 span.title-split{
     font-size: 2.4em;
-    transition: font-size 800ms, color 1.5s;
+    transition: font-size 800ms, border-bottom 800ms, color 1.5s;
+    transition-delay: 0s, 500ms, 0s;
 }
 
 #carosel-title.title{
@@ -370,7 +399,6 @@ span.title-split{
     white-space: nowrap;
     margin-bottom: 35px;
     padding: 0px;
-    background-color: pink;
     align-items: center;
 }
 
@@ -392,7 +420,6 @@ span.title-split{
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-    transition: all 200ms ease;
 }
 .carosel-subtitle-container{
     display: flex;
@@ -400,11 +427,36 @@ span.title-split{
     justify-content: center;
 }
 .subtitle{
-    font-size: 2.6em;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: center;
+}
+.img-box-overlay{
+    background-color:pink;
+    height: 65px;
+    position: absolute;
+    opacity: .9;
+    margin-left: 10px;
+    width: 560px;
+    top: 310px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.img-box:hover{
-    width: 40em;
+.img-box-overlay-title{
+    color: white;
+    align-items: center;
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+}
+
+.see-more{
+    width: 110px;
+    height: 50px;
+    font-size: 1.5em;
+    background-color: white;
+    color: pink;
 }
 
 .contact-container{
@@ -413,12 +465,21 @@ span.title-split{
     justify-content: space-around;
     flex-direction: row;
     margin-bottom: 40px;
+    height: 13em;
 }
+
+.sm-container{
+    height: 13em;
+    width: 14em;
+    justify-content: center;
+    display: flex;
+}
+
 .social{
     width: 9em;
     height: 9em;
     cursor: pointer;
-    transition: all 400ms;
+    transition: all 240ms;
 }
 
 .social:hover{
@@ -459,6 +520,14 @@ input::placeholder{
     width: 7em;
     height: 3em;
 }
+.link-list > *:hover, a:hover{ /* > * taken from w3schools website */
+    color: lemonchiffon;
+}
+
+.link-list > *{
+    transition: all 200ms ease;
+}
+
 
 .footer-container{
     display: flex;
@@ -467,10 +536,14 @@ input::placeholder{
     background-color: rgb(243, 185, 221);
     border-radius: 8px;
 }
+.m-footer-nav{
+    display: none;
+}
 
 .fheader{
     font-size: 1.3em;
-    color: rgb(250, 242, 246)
+    color: rgb(250, 242, 246);
+    cursor: pointer;
 }
 
 ul{
@@ -480,10 +553,12 @@ ul{
 a{
     color: white;
     text-decoration: none;
+    transition: all 200ms ease;
 }
 
 #logo-footer{
-    font-size: 1.9em;
+    font-size: 3.1em;
+    font-family: 'Dancing Script', cursive;
 }
 
 .dropdown{
@@ -493,6 +568,11 @@ a{
 @media only screen and (max-width: 640px){
     #opener{
         text-align: center;
+    }
+
+    #first-cover.cover{
+        height: max-content;
+        padding-bottom: 20px;
     }
 
     #main-button{
@@ -518,10 +598,14 @@ a{
     .step{
         flex-direction: column;
         justify-content: center;
+        background-position: right;
+        background-repeat: no-repeat;
     }
     #step-2{
         flex-direction: column;
         justify-content: center;
+        background-position: center;
+        background-repeat: no-repeat;
 
     }
     #step-3-header{
@@ -530,6 +614,10 @@ a{
     }
     #step-3:hover #step3{
         font-size: 2.2em;
+    }
+    #step-3{
+        background-position: top;
+        height: 50em;
     }
     .step-header-extra{
         font-size: 1.8em;
@@ -555,37 +643,40 @@ a{
         height: 60em;
     }
 
-    .hamburger-list{
-        visibility: hidden;
-        height: 0px;
-        margin: 0px;
-        transition: all 500ms ease;
+    #hamburger{
+        top: 20px;
+        left: 100px;
     }
 
-    input[type=checkbox]:checked ~ #hamlist.hamburger-list{
+    .hamburger-list{
+        height: 0px;
+        padding: 0px;
+        transition: all 750ms ease;
+        overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 0px;
         width: 100%;
         margin: 0px;
-        height: 12em;
-        visibility: visible;
-        transition: all 3s ease;
+    }
+
+    input[type=checkbox]:checked ~ #hamlist.hamburger-list{
+        padding: 0px;
+        height: 400px;
+        border-bottom: white 5px solid;
         
     }
     .h-list-item{
-        width: 100%;
-        background-color: white;
+        width: 100%;;
         text-align: center;
-        margin-top: 2px;
-        border-top: 2px solid pink;
-        border-bottom: 2px solid pink;
+        margin-top: auto;
     }
     .h-r{
-        color: pink;
-        transition: 100ms;
+        color: white;
+        font-family: 'Nothing You Could Do', cursive;
+        font-size: 2em;
+        font-weight: bold;
     }
 
     label{
@@ -604,6 +695,96 @@ a{
         width: max-content;
         height: 2.3em;
     }
+    #contact-title{
+        text-align: center;
+    }
+    .contact-container{
+        flex-direction: column;
+        height: max-content;
+    }
+    .social{
+        padding-top: 50px;
+    }
+    .email-container{
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    .email-p{
+        text-align: center;
+    }
+    input{
+        margin-bottom: 30px;
+    }
+
+    .footer-container{
+        display: none;
+    }
+    .m-footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: pink;
+        align-items: center;
+        height: 20em;
+    }
+    #plus{
+        font-size: 2em;
+    }
+    .m-div-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: pink;
+        box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.16), 0px 3px 6px 1px rgba(0,0,0,0.23);
+    }
+    #resources-checkbox[type=checkbox]:checked ~ #m-resources-ll{
+        height: 200px;
+        border-top: solid 4px white;
+        border-bottom: solid 4px white
+    }
+    #about-checkbox[type=checkbox]:checked ~ #m-about-ll{
+        height: 200px;
+        border-top: solid 4px white;
+        border-bottom: solid 4px white
+    }
+    #account-checkbox[type=checkbox]:checked ~ #m-account-ll{
+        height: 200px;
+        border-top: solid 4px white;
+        border-bottom: solid 4px white
+    }
+    #social-media-checkbox[type=checkbox]:checked ~ #m-social-media-ll{
+        height: 200px;
+        border-top: solid 4px white;
+        border-bottom: solid 4px white;
+    }
+    .m-footer-link-list{
+        height: 0px;
+        padding: 0px;
+        transition: all 750ms ease;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .m-footer-nav{
+        display: flex;
+        flex-direction: column;
+    }
+    #m-header-logo{
+        font-size:3.2em;
+        font-family: 'Dancing Script', cursive;
+    }
+    #h-logo{
+        font-size: 3.1em;
+        font-family: 'Dancing Script', cursive;
+
+    }
+
 
 
 }
