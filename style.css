@@ -5,13 +5,15 @@ html{
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Indie Flower', cursive;
     color: pink;
     outline: white;
 }
-
-#first-cover.cover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("images/wedding.jpg");
+#opener-description{
+    font-family: 'Indie Flower', cursive;
+    font-weight: 100
+}
+.cover{
     background-size: cover;
     height: 50em;
     width: auto;
@@ -19,6 +21,16 @@ body{
     position: relative;
     background-position: center;
     z-index: 1;
+}
+
+#first-cover.cover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("images/mainwedding.jpg");
+    height: 62em;
+}
+
+#carosel-cover{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("images/flowers.jpg");
+    height: 73em;
 }
 
 .opener{
@@ -30,10 +42,11 @@ body{
 }
 
 #opener{
+    text-align: center;
     font-size: 5em;
     font-weight: bold;
     font-family: 'Nothing You Could Do', cursive;
-    margin: 0;
+    margin: 0px;
     margin-top: 1.5em;
 }
 
@@ -119,7 +132,7 @@ nav:hover #get-started{
 }
 
 button{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Indie Flower', cursive;
     background: rgb(243, 185, 221);
     color: white;
     border-radius: 30px;
@@ -138,7 +151,6 @@ button:hover{
     background: rgb(250, 209, 235);
     border-color: rgb(250, 209, 235);
     color: rgb(255, 255, 255);
-    box-shadow: 0px 5px 8px 3px rgba(0,0,0,0.16), 0px 3px 6px 1px rgba(0,0,0,0.23);
 }
 button:active{
     background: rgb(250, 209, 235);
@@ -152,11 +164,10 @@ button:active{
     width:15em;
     font-size: 3.3em;
 }
-
 #main-button:hover{
-    height: 2.2em;
-    width: 15.2em;
+    box-shadow: white inset 1px 2px 6px 2px;
 }
+
 .how-title-container{
     display: flex;
     justify-content: center;
@@ -164,12 +175,16 @@ button:active{
 }
 #how-title{
     text-decoration: underline;
+    font-size: 7em;
+    font-family: 'Nothing You Could Do', cursive;
+    color: white;
 }
 
 .title{
     font-size: 4em;
-    font-family: 'Nothing You Could Do', cursive;
+    font-family: 'Indie Flower', cursive;
     height: 2.3em;
+    text-align: center;
 }
 
 .step{
@@ -178,6 +193,13 @@ button:active{
     align-items: center;
     flex-direction: row;
     height: 45em;
+}
+.step-1-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
 }
 
 #step-1{
@@ -188,10 +210,12 @@ button:active{
     background-position: center;
     z-index: 1;
     background-position-y: top;
+    display: flex;
+    flex-direction: column;
 }
 
 #step-1:hover #step-1-header{
-    font-size: 3.6em;
+    font-size: 7.6em;
     color: white;
 }
 
@@ -201,7 +225,6 @@ button:active{
 }
 
 #step-2:hover #step-2-header{
-    font-size: 3.6em;
     color: white;
 }
 
@@ -210,7 +233,7 @@ button:active{
     color: white;
 }
 #step-3:hover #step-3-header{
-    font-size: 3.6em;
+    font-size: 7.6em;
     color: white;
 }
 
@@ -258,7 +281,7 @@ button:active{
 }
 
 .step-header{
-    font-size: 3.5em;
+    font-size: 7.5em;
     color: pink;
     font-weight: bold;
     transition: font-size 400ms, color 2s;
@@ -279,9 +302,8 @@ button:active{
 }
 
 .step-header-extra{
-    font-size: 2.6em;
-    font-style: bold;
     font-family: 'Nothing You Could Do', cursive;
+    text-align: center;
 }
 
 
@@ -359,7 +381,7 @@ strong{
     background-position: bottom;
     z-index: 1;
     background-position-y: top;
-    height: 35em;
+    height: 150vh;
     text-align: center;
 }
 
@@ -382,6 +404,7 @@ span.title-split{
 
 #carosel-title.title{
     transition: font-size 500ms, color 750ms;
+    font-family: 'Nothing You Could Do', cursive;
 }
 
 .carosel-main{
@@ -400,6 +423,8 @@ span.title-split{
     margin-bottom: 35px;
     padding: 0px;
     align-items: center;
+    margin-top: 133px;
+    scrollbar-track-color: pink;
 }
 
 
@@ -427,7 +452,7 @@ span.title-split{
     justify-content: center;
 }
 .subtitle{
-    font-size: 3.5em;
+    font-size: 5.5em;
     font-weight: bold;
     text-align: center;
 }
@@ -469,7 +494,6 @@ span.title-split{
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    margin-bottom: 40px;
     height: 13em;
 }
 
@@ -490,6 +514,7 @@ span.title-split{
 .social:hover{
     width: 10em;
     height: 10em;
+    transform: rotate(-14deg);
 }
 #contact-title{
     margin: 0px;
@@ -571,22 +596,20 @@ a{
 }
 
 @media only screen and (max-width: 640px){
-    #opener{
-        text-align: center;
-    }
-
     #first-cover.cover{
         height: max-content;
         padding-bottom: 20px;
+        background-position: center;
     }
 
     #main-button{
         width: max-content;
         transition: 200ms;
+        font-size: 14vw;
     }
     #step-2-header{
         text-align: center;
-        width: 7em;
+        width: 100%;
     }
     .step-header{
         width: auto;
@@ -606,32 +629,50 @@ a{
         background-position: right;
         background-repeat: no-repeat;
     }
+    #step-description-1{
+        font-size: 8.2vw;
+    }
+    #step-1{
+        height:  186vh;
+    }
+    .step-1-container{
+        flex-direction: column;
+    }
     #step-2{
         flex-direction: column;
         justify-content: center;
         background-position: center;
         background-repeat: no-repeat;
+        height: 131vh;
 
-    }
-    #step-3-header{
-        font-size: 2em;
-        overflow-wrap: normal;
     }
     #step-3:hover #step3{
         font-size: 2.2em;
     }
     #step-3{
         background-position: top;
-        height: 50em;
+        height: 131vh;
     }
     .step-header-extra{
-        font-size: 1.8em;
+        font-size: 28vw;
+        text-align: center;
     }
+    #step-2-extra{
+        font-size: 34vw;
+    }
+
     span.title-split{
         font-size: 1.6em;
     }
+    .carosel-title-container:hover #carosel-title{
+        font-size: 24vw;
+        color: white;
+    }
     .carosel-title-container:hover #carosel-title-split{
         font-size: 1.8em;   
+    }
+    #carosel-title{
+        font-size: 20vw;
     }
     .navbar{
         display: none;
@@ -687,6 +728,11 @@ a{
     label{
         font-size: 6em;
         color: white;
+        height: 13vh;
+        font-family: 'Nothing You Could Do', cursive;
+    }
+    #hamburger-label{
+        font-family: sans-serif;
     }
     .dropdown{
         display: flex;
@@ -783,11 +829,19 @@ a{
     #m-header-logo{
         font-size:3.2em;
         font-family: 'Dancing Script', cursive;
+        text-align: center;
     }
     #h-logo{
-        font-size: 3.1em;
+        font-size: 11vw;
         font-family: 'Dancing Script', cursive;
+        text-align: center;
 
+    }
+    .step-description{
+        font-size: 8.7vw;
+    }
+    #opener{
+        font-size: 23vw;
     }
 
 
