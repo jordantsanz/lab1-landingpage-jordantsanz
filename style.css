@@ -11,7 +11,7 @@ body{
 }
 
 #first-cover.cover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/wedding.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("images/wedding.jpg");
     background-size: cover;
     height: 50em;
     width: auto;
@@ -431,7 +431,7 @@ span.title-split{
     font-weight: bold;
     text-align: center;
 }
-.img-box-overlay{
+.img-box-overlay{ /* received help from a TA on spacing */
     background-color:pink;
     height: 65px;
     position: absolute;
@@ -442,6 +442,11 @@ span.title-split{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: all 200ms;
+}
+.carosel-box:hover .img-box-overlay{
+    height: 90px;
+    top: 285px;
 }
 
 .img-box-overlay-title{
