@@ -25,7 +25,7 @@ body{
 
 #first-cover.cover{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("images/mainwedding.jpg");
-    height: 62em;
+    height: 44em;
 }
 
 #carosel-cover{
@@ -381,7 +381,7 @@ strong{
     background-position: bottom;
     z-index: 1;
     background-position-y: top;
-    height: 150vh;
+    height: 104vh;
     text-align: center;
 }
 
@@ -445,6 +445,7 @@ span.title-split{
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 .carosel-subtitle-container{
     display: flex;
@@ -468,6 +469,7 @@ span.title-split{
     justify-content: space-around;
     align-items: center;
     transition: all 200ms;
+    border-radius: 10px;
 }
 .carosel-box:hover .img-box-overlay{
     height: 90px;
@@ -673,6 +675,9 @@ a{
     }
     #carosel-title{
         font-size: 20vw;
+    }
+    .carosel-title-container{
+        height: 150vh;
     }
     .navbar{
         display: none;
