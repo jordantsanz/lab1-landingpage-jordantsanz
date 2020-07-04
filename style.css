@@ -82,9 +82,120 @@ nav{
     margin: 0px;
     margin-top: 4px;
 }
+.love, .where, .its, .date, .finds{
+    color: white;
+    transition: all 1s ease;
+
+}
+.love, .date{
+    font-size: 1.6em;
+}
 .love{
-    color: pink;
-    font-size: 1.5em;
+    animation: love;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.where{
+    animation: where;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.finds{
+    animation: finds;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.its{
+    animation: its;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.date{
+    animation: date;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes love{  /* looked up how animations work on w3schools, but
+    did this shimmer effect on my own */
+    0%{
+        color: white;
+    }
+    25%{
+        color: rgb(250, 146, 164);
+    }
+    89%{
+        color: rgb(250, 146, 164);
+    }
+    100%{
+        color: white;
+    }
+}
+@keyframes where{
+    0%{
+        color: rgb(250, 146, 164);
+    }
+    12%{
+        color: rgb(250, 146, 164);
+    }
+    36%{
+        color: white;
+    }
+    95%{
+        color: white;
+    }
+    100%{
+        color: rgb(250, 146, 164);
+    }
+}
+@keyframes finds{
+    0%{
+        color: white;
+    }
+    25%{
+        color: white;
+    }
+    36%{
+        color: rgb(250, 146, 164);;
+    }
+    48%{
+        color: white;
+    }
+    100%{
+        color: white;
+    }
+}
+@keyframes its{
+    0%{
+        color: white;
+    }
+    25%{
+        color: white;
+    }
+    46%{
+        color: rgb(250, 146, 164);
+    }
+    100%{
+        color: white;
+    }
+}
+
+@keyframes date{
+    0%{
+        color: white;
+    }
+    50%{
+        color: white;
+    }
+    58%{
+        color: rgb(250, 146, 164);
+    }
+    89%{
+        color: rgb(250, 146, 164);
+    }
+    100%{
+        color: white;
+    }
 }
 
 nav:hover .navbar-flex{
@@ -424,7 +535,6 @@ span.title-split{
     padding: 0px;
     align-items: center;
     margin-top: 133px;
-    scrollbar-track-color: pink;
 }
 
 
