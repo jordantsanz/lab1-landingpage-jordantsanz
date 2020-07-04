@@ -48,4 +48,4 @@ Here's a list of the extra-credit that I implemented:
 ![gif of hamburger](images/hamburger.gif)
 ![gif of footer](images/footer.gif)
 
-- Jordan
+Jordan
