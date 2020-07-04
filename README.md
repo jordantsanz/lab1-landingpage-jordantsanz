@@ -22,6 +22,7 @@ Here's a list of the extra-credit that I implemented:
 - Regular features:
   - There is a scrollable picture carosel, made with CSS
 - CSS Transitions:
+  - The title words animate in pink as a shimmer effect going across them, pausing on love and date, and then going back to white
   - The navbar is transparent when not hovering over it, and then it becomes white when you do hover over it
      - the font colors of the text on the navbar change colors with this, too
   - The words on the navbar will slightly change color, size, and boldness when hovering over them
@@ -42,7 +43,7 @@ Here's a list of the extra-credit that I implemented:
 
 ## Special Screenshots
 
-![gif of title page](images/coverpage.gif)
+![gif of title page](images/coverpage-real.gif)
 ![gif of steps](images/step.gif)
 ![gif of carosel](images/carosel.gif)
 ![gif of hamburger](images/hamburger.gif)
