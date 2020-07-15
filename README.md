@@ -10,7 +10,7 @@ I mimicked a mixture of [Patagonia](https://www.patagonia.com/home/), [Monday.co
 The CSS transitions worked really well. The background covers as well worked perfectly, and the parallax scrolling looked amazing. The checkbox hack also worked surprisingly well, after I figured it out. Using the vw and vh parameters when talking about sizing worked well for resizing to a mobile screen.
 
 ## What Didn't
-I really wanted to have my navbar fixed at the top and transparent when there hadn't been scrolling, and then for it to move with the user and color in white when there was scrolling, but this didn't work in css. Additionally, there were times where flexboxes were a bit annoying with positioning parameters. The carosel was tricky as well, because I couldn't use javascript; I also wanted to stylize the scrollbar, but I couldn't figure out how. 
+I really wanted to have my navbar fixed at the top and transparent when there hadn't been scrolling, and then for it to move with the user and color in white when there was scrolling, but this didn't work in regular css. Additionally, there were times where flexboxes were a bit annoying with positioning parameters. The carosel was tricky as well, because I wasn't allowed to use javascript.
 
 There were also very few gay weddings online as free pictures. THIS WAS DISAPPOINTING. 
 
