@@ -1,4 +1,4 @@
-# Title
+# When's the Wedding: Static Landing Page, CS 52, Lab 1
 
 Here is my website for CS52 Lab 1, for a wedding planning business called "When's the Wedding?".
 
